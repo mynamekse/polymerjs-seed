@@ -1,0 +1,29 @@
+{
+  "name": "firebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"concurrently \"npm run fb\" ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fb":"firebase serve --port 8080 --host 0.0.0.0",
+    "dev": "concurrently \"lite-server\"",
+    "localdev": "concurrently \"npm run fb\" \"gulp browser-sync\"" 
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+      "concurrently": "^2.2.0",
+    "browser-sync": "^2.17.2",
+    "gulp": "^3.9.1",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "^4.3.10",
+    "lite-server": "^2.2.2"
+  }
+}

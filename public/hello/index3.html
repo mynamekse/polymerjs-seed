@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- import latest release version of all components from polygit -->
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+<link rel="import" href="/bower_components/polymer/polymer.html">
+  </head>
+  <body>
+ 
+        <dom-module id="element-name">
+
+      <template>
+        <style>
+          /* CSS rules for your element */
+        </style>
+
+        <!-- local DOM for your element -->
+
+        <div>{{greeting}}</div> <!-- data bindings in local DOM -->
+      </template>
+
+      <script>
+        // element registration
+        Polymer({
+          is: "element-name",
+
+          // add properties and methods on the element's prototype
+
+          properties: {
+            // declare properties for the element's public API
+            greeting: {
+              type: String,
+              value: "dddddddddddddddddd!"
+            }
+          }
+        });
+      </script>
+
+    </dom-module>
+    <element-name></element-name>
+  </body>
+</html>
